@@ -18,11 +18,11 @@ period<-interval(begin, End)
 selected<-indata$Fdate %within% period
 graphData<-indata[selected,]
 
-# The data to be plotted is now in graphData
-# Convert the variable to number
+# Convert graph Data variables to numeric from factor format
 graphData$Global_active_power<-as.numeric(as.character(graphData$Global_active_power))
 
-# Plot Graphic 1 (Global Active Power) on PNG file
-png(file="plot1.png", width = 480, height = 480, units = "px")
-hist(graphData$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+# Plot Graphic 2 (Global Active Power - Line) on PNG file
+png(file="plot2.png", width = 480, height = 480, units = "px")
+with(graphData, plot(Fdate, Global_active_power, type="n", ylab = "Global active power(kilowatts)", xlab = ""))
+lines(graphData$Fdate, graphData$Global_active_power)
 dev.off()
