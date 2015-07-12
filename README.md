@@ -1,5 +1,21 @@
 ## Introduction
 
+In the bas directory you will find 4 scripts and 4 png files corresponding to the four graphs requested in the assignment.
+
+In order to make the scripts work, you have to download the zip file mentioned below and unzip it.
+You need to run the scripts on the same directory where you unzipped the data.
+The scripts expect the data file to be named: "household_power_consumption.txt".
+
+Just Source the selected sript out of the four existing and the script will create the corresponding PNG file.
+
+Scripts are:
+
+plot1.R, plot2.R, plot3.r, plot4.R
+
+And their corresponding files, generated in the working directory will be:
+
+plot1.png, plot2.png, plot3.png, plot4.png
+
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
 Learning Repository</a>, a popular repository for machine learning
